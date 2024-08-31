@@ -1,9 +1,9 @@
 FROM golang:alpine
 
-# WORKDIR /go/src/example/hello
+WORKDIR /go/src/example/hello
 
-# COPY . .
+COPY . .
 
-# RUN go mod init example/hello
+RUN go mod init example/hello
 
-# ENTRYPOINT [ "go", "run", "."]
+ENTRYPOINT [ "go", "run", "."]
