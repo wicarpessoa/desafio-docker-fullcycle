@@ -4,9 +4,7 @@ WORKDIR /go/src/app
 
 COPY . .
 
-RUN go mod init app/hello
-
-RUN go build -ldflags "-s -w" -o hello
+RUN go build -ldflags "-s -w" -o hello helloworld.go
 
 FROM scratch
 
